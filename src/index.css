@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #433FE5;
+    --primary-hover: #3430C6;
+    --primary-light: #EEEDFF;
+    --secondary-bg: #F0F0F0;
+    --card-bg: #FFFFFF;
+    --border-light: #E5E7EB;
+    --text-primary: #111827;
+    --text-secondary: #4B5563;
+    --text-muted: #6B7280;
+  }
+
+  html, body {
+    scroll-behavior: smooth !important;
+    font-family: 'Instrument Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    background-color: #FAFAFA;
+    color: #171717;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F0F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #433FE5;
+}
+
+/* Wide dashed section divider with longer dashes & wider spacing (fewer dashes) */
+.border-dashed-wide {
+  background-image: repeating-linear-gradient(90deg, #CBD5E1 0, #CBD5E1 8px, transparent 8px, transparent 18px);
+  background-position: bottom;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+}
+
+/* Vertical wide dashed side borders along layout */
+.border-x-dashed-wide {
+  background-image:
+    repeating-linear-gradient(180deg, #CBD5E1 0, #CBD5E1 8px, transparent 8px, transparent 18px),
+    repeating-linear-gradient(180deg, #CBD5E1 0, #CBD5E1 8px, transparent 8px, transparent 18px);
+  background-position: left top, right top;
+  background-size: 1px 100%, 1px 100%;
+  background-repeat: no-repeat;
+}
+
+/* Derek Muller inspired minimal layout styling */
+.derek-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.derek-card:hover {
+  border-color: #D1D5DB;
+  border-radius: 0px;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+}
+
+.derek-card:hover .rounded-lg {
+  border-radius: 0px;
+  transition: border-radius 0.2s ease-out;
+}
+
+.badge-primary {
+  background-color: #EEEDFF;
+  color: #433FE5;
+  border: 1px solid rgba(67, 63, 229, 0.15);
+}
+
+.badge-grey {
+  background-color: #F0F0F0;
+  color: #374151;
+  border: 1px solid #E5E7EB;
+}
+
+/* Custom interactive pill buttons */
+.btn-primary {
+  background-color: #433FE5;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.btn-primary:hover {
+  background-color: #3430C6;
+  box-shadow: 0 4px 12px rgba(67, 63, 229, 0.25);
+}
+
+.btn-secondary {
+  background-color: #F0F0F0;
+  color: #111827;
+  border: 1px solid #E5E7EB;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.btn-secondary:hover {
+  background-color: #E5E7EB;
+  border-color: #D1D5DB;
+}
