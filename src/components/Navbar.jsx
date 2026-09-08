@@ -16,7 +16,7 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Work', href: '#work' },
     { label: 'About', href: '#about-me' },
-    { label: 'Contact', href: 'mailto:harshavalluri52@gmail.com' },
+    { label: 'Contact', href: '#footer' },
   ];
 
 

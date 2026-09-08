@@ -7,7 +7,7 @@ export default function Footer({ onOpenResume }) {
   };
 
   return (
-    <footer className="py-12 px-6 sm:px-10 text-center">
+    <footer id="footer" className="py-12 px-6 sm:px-10 text-center">
       <div className="max-w-3xl mx-auto flex flex-col items-center">
 
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-dashed-wide">
@@ -35,7 +35,7 @@ export default function Footer({ onOpenResume }) {
             </a>
 
             <a
-              href="https://linkedin.com/in/harsha-valluri"
+              href="https://www.linkedin.com/in/harsha-valluri-/"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center text-xs font-medium text-[#4B5563] hover:text-[#433FE5] transition-colors py-1"
