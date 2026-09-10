@@ -49,6 +49,21 @@ export default function Footer({ onOpenResume }) {
               </span>
             </a>
 
+            <a
+              href="https://github.com/harshav13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center text-xs font-medium text-[#4B5563] hover:text-[#433FE5] transition-colors py-1"
+            >
+              <span className="inline-block transition-transform duration-200 ease-out group-hover:-translate-x-[2px] text-[#9CA3AF] group-hover:text-[#433FE5]">
+                [
+              </span>
+              <span className="px-0.5">GitHub</span>
+              <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-[2px] text-[#9CA3AF] group-hover:text-[#433FE5]">
+                ]
+              </span>
+            </a>
+
             <button
               onClick={onOpenResume}
               className="group inline-flex items-center text-xs font-medium text-[#4B5563] hover:text-[#433FE5] transition-colors py-1 cursor-pointer"
