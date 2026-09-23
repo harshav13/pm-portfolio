@@ -29,7 +29,7 @@ export default function AboutMe() {
           className="space-y-6 text-base sm:text-lg text-[#4B5563] leading-relaxed text-center max-w-2xl mx-auto"
         >
           <p>
-            Product-minded builder with 1+ year shipping 0-to-1 products end-to-end, from research to MVP delivery, across B2B2C and consumer platforms. A design foundation sharpened into product judgment, framing ambiguous problems, prioritizing scope, and partnering with engineering to ship fast.
+            I’m a product builder with a year of experience designing and shipping products from scratch, from user research to MVP delivery. Working across different domains has helped me develop a better understanding of what makes a good product and build stronger product judgment along the way.
             <br />
             But I also love to...
           </p>

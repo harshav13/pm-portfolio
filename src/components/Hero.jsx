@@ -6,9 +6,9 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-24 text-center px-6 sm:px-10">
       <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
-        
+
         {/* Status Pill Badge */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
@@ -22,7 +22,7 @@ export default function Hero() {
         </motion.div>
 
         {/* 100x100 Black & White Photo Circle Frame */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.15 }}
@@ -36,17 +36,17 @@ export default function Hero() {
         </motion.div>
 
         {/* Main Headline */}
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#111827] leading-[1.15] text-center"
         >
-          I enjoy understanding messy problems, turning them into clear product opportunities.
+          I enjoy understanding messy problems & turning them into clear product opportunities.
         </motion.h1>
 
         {/* CTAs */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}

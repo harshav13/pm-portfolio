@@ -10,7 +10,7 @@ export default function SelectedWork() {
       subtitle: 'Digitalising Interior Design Operations & Customer Experience.',
       tags: ['User Research', 'Design Systems', 'Product Design'],
       thumbnail: '/myclosets.svg',
-      link: '#'
+      link: 'https://www.figma.com/deck/MQ5zk6aladYfgpBmADFVun'
     },
     {
       id: 'tidyfy',
@@ -18,7 +18,7 @@ export default function SelectedWork() {
       subtitle: 'Designing an AI-Powered Home Organization Experience.',
       tags: ['UI Revamp', 'Product Thinking', 'AI Powered'],
       thumbnail: '/tidyfy.svg',
-      link: '#'
+      link: 'https://www.figma.com/deck/gJck7oiBTHFRzVDgPtEyqM'
     },
     {
       id: 'meet-in-the-middle',
@@ -26,7 +26,7 @@ export default function SelectedWork() {
       subtitle: 'A mobile-first feature within Google Maps.',
       tags: ['Feature Design', 'Usability Testing'],
       thumbnail: '/meetinthemiddle.svg',
-      link: '#'
+      link: 'https://www.figma.com/deck/AAdkumn14Ej3uzqj4rl6UP'
     },
     {
       id: 'vizag-volunteers',
@@ -34,7 +34,7 @@ export default function SelectedWork() {
       subtitle: 'Revamping a task flow for volunteer operations.',
       tags: ['Problem Solving', 'User Research'],
       thumbnail: '/vv.svg',
-      link: '#'
+      link: 'https://www.figma.com/deck/5epMUrnvPMS2O95CJmcXb3'
     }
   ];
 
@@ -55,13 +55,16 @@ export default function SelectedWork() {
         {/* 2X2 Grid with 4 Square Boxes — 16px (gap-4) spacing */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left">
           {projects.map((project, idx) => (
-            <motion.div
+            <motion.a
               key={project.id}
+              href={project.link}
+              target={project.link !== '#' ? '_blank' : '_self'}
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="derek-card p-5 sm:p-6 aspect-square flex flex-col justify-between group hover:border-[#433FE5]/40 hover:rounded-none transition-all duration-200 shadow-xs overflow-hidden"
+              className="derek-card p-5 sm:p-6 aspect-square flex flex-col justify-between group hover:border-[#433FE5]/40 hover:rounded-none transition-all duration-200 shadow-xs overflow-hidden cursor-pointer"
             >
               <div className="space-y-3">
                 {/* Thumbnail Image Container (B&W by default, color on hover) */}
@@ -98,17 +101,12 @@ export default function SelectedWork() {
 
               {/* Action Hyperlink (Secondary color by default, turns blue on hover) */}
               <div className="pt-3 border-t border-[#E5E7EB] flex items-center justify-between">
-                <a
-                  href={project.link}
-                  target={project.link !== '#' ? '_blank' : '_self'}
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#6B7280] group-hover:text-[#433FE5] transition-colors"
-                >
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#6B7280] group-hover:text-[#433FE5] transition-colors">
                   <span>Read Case Study</span>
                   <ArrowUpRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </a>
+                </span>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 
